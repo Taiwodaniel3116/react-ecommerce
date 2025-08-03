@@ -77,7 +77,7 @@ const Cart = ({
               {/* </div> */}
               <div>
                 <button
-                  className="text-stone-700 mt-2 font-bold"
+                  className="text-stone-800 mt-2 font-bold"
                   onClick={() => removeItem(id)}
                 >
                   Remove
