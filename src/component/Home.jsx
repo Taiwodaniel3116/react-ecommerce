@@ -28,12 +28,14 @@ export const Home = ({ totalQuantity }) => {
       <h1>Home</h1>
       <h2 className="text-white text-center font-bold mt-10">
         Dear Customer, welcome to our Wonderful store!
-        <br /> Please head to our 
-        <Link to="/shop" className="pl-[5px] pr-[5px] underline text-emerald-300">
+        <br /> Please head to our
+        <Link
+          to="/shop"
+          className="pl-[5px] pr-[5px] underline text-emerald-300"
+        >
           Shop
-          </Link>
-         to check our different products. Thank
-        you!
+        </Link>
+        to check our different products. Thank you!
       </h2>
     </>
   );

@@ -2,7 +2,6 @@ import "./App.css";
 import { Home } from "./component/Home";
 import { Shop } from "./component/shop";
 import Cart from "./component/Cart";
-import { products } from "./data/product";
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Checkout from "./component/Checkout";
@@ -10,12 +9,12 @@ import { getItem, setItem } from "./utils/localStorage";
 
 function App() {
   const [cartItems, setCartItems] = useState(() => {
-    const item = getItem('cartItems');
-     return (item);
+    const item = getItem("cartItems");
+    return item;
   });
 
   useEffect(() => {
-    setItem('cartItems', cartItems);
+    setItem("cartItems", cartItems);
   }, [cartItems]);
 
   //Add To Cart Functionality
@@ -65,7 +64,9 @@ function App() {
   function decreaseQuantity(id) {
     const updateItem = [...cartItems];
     if (updateItem[id].quantity <= 1) {
-      alert("Quantity will be 0, want to remove item from your cart? \n Use the Remove button below.");
+      alert(
+        "Quantity will be 0, want to remove item from your cart? \n Use the Remove button below."
+      );
     } else {
       updateItem[id].quantity -= 1;
       setCartItems(updateItem);
@@ -95,10 +96,7 @@ function App() {
     <>
       <Router>
         <Routes>
-        <Route path="/" element={<Home
-          totalQuantity={totalQuantity}
-        />} 
-        />
+          <Route path="/" element={<Home totalQuantity={totalQuantity} />} />
           <Route
             path="/shop"
             element={

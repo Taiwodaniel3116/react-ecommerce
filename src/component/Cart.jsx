@@ -33,9 +33,6 @@ const Cart = ({
         </Link>
       </nav>
       <h1>Your Cart</h1>
-      {/* <h2 className="text-white font-bold text-center mb-10">
-        cart Items: {totalQuantity}{" "}
-      </h2> */}
 
       <div className="w-max-content h-max-content bg-emerald-600 border-2 border-white pt-3 px-3 rounded-2xl md:w-100 m-auto">
         {cartItems.map((cartItem, id) => (
@@ -58,8 +55,7 @@ const Cart = ({
               <p className="cart-name-and-price">
                 Quantity: {cartItem.quantity}
               </p>
-              {/* 
-              <div className="w-30 h-8 border-white border-2 flex justify-center items-center gap-9 rounded-md mt-3"> */}
+              
               <div className="mt-2">
                 <button
                   className="text-white font-bold w-10 mr-3 rounded-full border-[1px]"
@@ -74,7 +70,6 @@ const Cart = ({
                   ➕
                 </button>
               </div>
-              {/* </div> */}
               <div>
                 <button
                   className="text-stone-800 mt-2 font-bold"

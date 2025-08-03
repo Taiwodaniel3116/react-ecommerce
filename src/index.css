@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
 body {
-  background: #10176a;
   background-color: darkcyan
 }
 
@@ -9,10 +8,6 @@ body {
    h1 {
     @apply text-white text-4xl text-center underline mb-15;
   }
-
-  /* img {
-    @apply w-38 h-40 m-auto;
-  } */
 }
 
 @utility name-and-price {
