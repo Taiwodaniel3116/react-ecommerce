@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+body {
+  background: #10176a;
+  background-color: darkcyan
+}
+
+@layer base {
+   h1 {
+    @apply text-white text-4xl text-center underline mb-15;
+  }
+
+  /* img {
+    @apply w-38 h-40 m-auto;
+  } */
+}
+
+@utility name-and-price {
+  @apply text-white font-bold text-center;
+}
+
+@utility shop-img {
+  @apply w-38 h-40 m-auto;
+}
+
+@utility cart-img {
+  @apply w-38 h-40 rounded-tl-2xl rounded-2xl;
+}
+@utility checkout-img {
+  @apply w-20 h-20 pt-2;
+}
+
+@utility cart-name-and-price {
+  @apply text-white font-bold;
+}
