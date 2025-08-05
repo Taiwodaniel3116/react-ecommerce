@@ -8,10 +8,10 @@ import Checkout from "./component/Checkout";
 import { getItem, setItem } from "./utils/localStorage";
 
 function App() {
-  const [cartItems, setCartItems] = useState(() => {
+  const [cartItems, setCartItems] = useState([]/* () => {
     const item = getItem("cartItems");
     return item;
-  });
+  } */);
 
   useEffect(() => {
     setItem("cartItems", cartItems);
