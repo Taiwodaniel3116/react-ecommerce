@@ -1,6 +1,6 @@
 import "./App.css";
 import { Home } from "./component/Home";
-import { Shop } from "./component/shop";
+import { Shop } from "./component/Shop";
 import Cart from "./component/Cart";
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
