@@ -69,7 +69,7 @@ const Checkout = ({ cartItems, totalQuantity, totalPrice }) => {
             </span>
           </div>
         </div>
-        <div className="flex justify-center flex-col items-center gap-2 pt-3 mb-15 font-mono">
+        <div className="flex justify-center flex-col items-center gap-2 pt-3 mb-15 mt-5 font-mono">
           <a href="wa.me/2349027396272">
             <button className="bg-green-400 px-3 py-2 rounded-2xl">
               Complete Order via Whatsapp{" "}
