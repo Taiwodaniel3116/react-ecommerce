@@ -28,3 +28,7 @@ body {
 @utility cart-name-and-price {
   @apply text-white font-bold;
 }
+
+@utility links-hover-color {
+  @apply hover:text-green-300;
+}

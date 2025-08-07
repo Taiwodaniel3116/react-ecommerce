@@ -6,13 +6,13 @@ export const Home = ({ totalQuantity }) => {
     <>
       <nav className="text-white flex justify-end border-b-[1px] border-b-emerald-950 pb-2">
         <div>
-          <Link to="/shop" className="pr-5 pl-3">
+          <Link to="/shop" className="pr-5 pl-3 text-green-300">
             Shop
           </Link>
-          <Link to="/cart" className="pr-5">
+          <Link to="/cart" className="pr-5 links-hover-color">
             Cart
           </Link>
-          <Link to="/checkout">Checkout</Link>
+          <Link to="/checkout" className="links-hover-color">Checkout</Link>
         </div>
         <Link to="/cart" className="flex items-center relative ml-10">
           <img

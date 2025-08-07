@@ -1,7 +1,7 @@
 import "./App.css";
-import { Home } from "./component/Home";
-import { Shop } from "./component/Shop";
-import Cart from "./component/Cart";
+import { Home } from "./component/Home.jsx";
+import { Shop } from "./component/Shop.jsx";
+import Cart from "./component/Cart.jsx";
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Checkout from "./component/Checkout";
@@ -12,9 +12,14 @@ function App() {
     const item = getItem("cartItems");
     return item;
   } */);
+  // useEffect(() => {
+  //   const item = getItem("cartItems");
+  //   return item;
+  // })
 
   useEffect(() => {
     setItem("cartItems", cartItems);
+    console.log('Save cart')
   }, [cartItems]);
 
   //Add To Cart Functionality

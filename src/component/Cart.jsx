@@ -13,13 +13,13 @@ const Cart = ({
     <div className="h-100">
       <nav className="text-white flex justify-end border-b-[1px] border-b-emerald-950 pb-2">
         <div>
-          <Link to="/" className="pr-5 pl-3">
+          <Link to="/" className="pr-5 pl-3 text-green-300">
             Home
           </Link>
-          <Link to="/shop" className="pr-5">
+          <Link to="/shop" className="pr-5 links-hover-color">
             Shop
           </Link>
-          <Link to="/checkout">Checkout</Link>
+          <Link to="/checkout" className="links-hover-color">Checkout</Link>
         </div>
         <Link to="/cart" className="flex items-center relative ml-10">
           <img
@@ -58,13 +58,13 @@ const Cart = ({
               
               <div className="mt-2">
                 <button
-                  className="text-white font-bold w-10 mr-3 rounded-full border-[1px]"
+                  className="text-white font-bold w-10 mr-3 rounded-full border-[1px] hover:bg-emerald-500"
                   onClick={() => decreaseQuantity(id)}
                 >
                   ➖
                 </button>
                 <button
-                  className="text-white font-bold w-10 rounded-full border-[1px]"
+                  className="text-white font-bold w-10 rounded-full border-[1px] hover:bg-emerald-500"
                   onClick={() => increaseQuanity(id)}
                 >
                   ➕
@@ -72,7 +72,7 @@ const Cart = ({
               </div>
               <div>
                 <button
-                  className="text-stone-800 mt-2 font-bold"
+                  className="text-white mt-2 font-bold hover:text-gray-300"
                   onClick={() => removeItem(id)}
                 >
                   Remove
@@ -85,6 +85,10 @@ const Cart = ({
           <span className="text-white font-bold uppercase">Total:</span>
           <span className="text-white font-bold">${totalPrice.toFixed(2)}</span>
         </div>
+      </div>
+
+      <div className="mt-7 w-fit h-max m-auto bg-black text-white px-6 py-2 rounded-full hover:bg-gray-900">
+        <Link to="/checkout">Proceed to Checkout</Link>
       </div>
     </div>
   );

@@ -7,13 +7,13 @@ export const Shop = ({ addToCart, totalQuantity }) => {
     <>
       <nav className="text-white flex justify-end border-b-[1px] border-b-emerald-950 pb-2">
         <div>
-          <Link to="/" className="pr-5 pl-3">
+          <Link to="/" className="pr-5 pl-3 text-green-300">
             Home
           </Link>
-          <Link to="/cart" className="pr-5">
+          <Link to="/cart" className="pr-5 links-hover-color">
             Cart
           </Link>
-          <Link to="/checkout">Checkout</Link>
+          <Link to="/checkout" className="links-hover-color">Checkout</Link>
         </div>
 
         <Link to="/cart" className="flex items-center relative ml-10">
@@ -33,7 +33,7 @@ export const Shop = ({ addToCart, totalQuantity }) => {
           <div key={product.id}>
             <div className="pb-5 border-gray-100 border-2 shadow-2xl shadow-emerald-400">
               <div className="mt-2 shadow- shadow-emerald-400">
-                <img className="shop-img" src={product.image} />
+                <img className="shop-img rounded-lg cursor-pointer  hover:" src={product.image} />
               </div>
               <p className="name-and-price">{product.name}</p>
               <p className="name-and-price">${product.price}</p>
@@ -41,7 +41,7 @@ export const Shop = ({ addToCart, totalQuantity }) => {
 
               <div className="flex items-center justify-center">
                 <button
-                  className="bg-green-400 px-9 py-1 rounded-full"
+                  className="bg-green-400 px-9 py-1 rounded-full hover:bg-green-300 transition duration-200"
                   onClick={() => addToCart(product)}
                 >
                   Add to cart
