@@ -9,10 +9,10 @@ export const Home = ({ totalQuantity }) => {
           <Link to="/shop" className="pr-5 pl-3 text-green-300">
             Shop
           </Link>
-          <Link to="/cart" className="pr-5 links-hover-color">
+          <Link to="/cart" className="pr-5 links-hover-color links-active-color">
             Cart
           </Link>
-          <Link to="/checkout" className="links-hover-color">Checkout</Link>
+          <Link to="/checkout" className="links-hover-color links-active-color">Checkout</Link>
         </div>
         <Link to="/cart" className="flex items-center relative ml-10">
           <img

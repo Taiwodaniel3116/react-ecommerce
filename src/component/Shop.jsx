@@ -10,10 +10,10 @@ export const Shop = ({ addToCart, totalQuantity }) => {
           <Link to="/" className="pr-5 pl-3 text-green-300">
             Home
           </Link>
-          <Link to="/cart" className="pr-5 links-hover-color">
+          <Link to="/cart" className="pr-5 links-hover-color links-active-color">
             Cart
           </Link>
-          <Link to="/checkout" className="links-hover-color">Checkout</Link>
+          <Link to="/checkout" className="links-hover-color links-active-color">Checkout</Link>
         </div>
 
         <Link to="/cart" className="flex items-center relative ml-10">
@@ -41,7 +41,7 @@ export const Shop = ({ addToCart, totalQuantity }) => {
 
               <div className="flex items-center justify-center">
                 <button
-                  className="bg-green-400 px-9 py-1 rounded-full hover:bg-green-300 transition duration-200"
+                  className="bg-emerald-400 px-9 py-1 rounded-full transition duration-200 active:bg-emerald-500 hover:bg-emerald-500"
                   onClick={() => addToCart(product)}
                 >
                   Add to cart

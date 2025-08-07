@@ -32,3 +32,6 @@ body {
 @utility links-hover-color {
   @apply hover:text-green-300;
 }
+@utility links-active-color {
+  @apply active:text-green-300;
+}
