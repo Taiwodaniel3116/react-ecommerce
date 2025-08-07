@@ -1,6 +1,6 @@
 import "./App.css";
 import { Home } from "./component/Home.jsx";
-import { Shop } from "./component/Shop.jsx";
+import { Shop } from "./component/shop.jsx";
 import Cart from "./component/Cart.jsx";
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -8,14 +8,11 @@ import Checkout from "./component/Checkout";
 import { getItem, setItem } from "./utils/localStorage";
 
 function App() {
-  const [cartItems, setCartItems] = useState([]/* () => {
+  const [cartItems, setCartItems] = useState(() => {
     const item = getItem("cartItems");
-    return item;
-  } */);
-  // useEffect(() => {
-  //   const item = getItem("cartItems");
-  //   return item;
-  // })
+    console.log('Load from Storage')
+    return item || [];
+  });
 
   useEffect(() => {
     setItem("cartItems", cartItems);
