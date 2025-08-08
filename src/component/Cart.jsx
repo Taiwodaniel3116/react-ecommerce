@@ -40,9 +40,9 @@ const Cart = ({
             key={id}
             className="flex gap-2 border-2 border-white rounded-lg mb-3"
           >
-            <div className="shadow-2xl shadow-emerald-400">
+            <div className="shadow-2xl shadow-emerald-400 py-2">
               <img
-                className="cart-img pl-1"
+                className="cart-img pl-1 hover:shadow-emerald-400 shadow-2xl"
                 src={cartItem.image}
                 alt="cartItem"
               />
@@ -87,7 +87,7 @@ const Cart = ({
         </div>
       </div>
 
-      <div className="mt-7 w-fit h-max m-auto bg-black text-white px-6 py-2 rounded-full hover:bg-gray-900 active:bg-gray-900">
+      <div className="mt-7 w-fit h-max m-auto bg-emerald-800 shadow-2xs shadow-emerald-300 text-white px-6 py-2 rounded-full hover:bg-emerald-900 active:bg-emerald-900">
         <Link to="/checkout">Proceed to Checkout</Link>
       </div>
     </div>

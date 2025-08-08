@@ -43,7 +43,7 @@ const Checkout = ({ cartItems, totalQuantity, totalPrice }) => {
                 <img
                   src={cartItem.image}
                   alt="cart items"
-                  className="checkout-img pl-1"
+                  className="checkout-img pl-1 hover:shadow-emerald-400 shadow-2xl"
                 />
               </div>
               <p className="text-center font-semibold text-[13px]">
