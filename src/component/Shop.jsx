@@ -33,7 +33,7 @@ export const Shop = ({ addToCart, totalQuantity }) => {
           <div key={product.id}>
             <div className="pb-5 border-gray-100 border-2 shadow-2xl shadow-emerald-400">
               <div className="mt-2 shadow- shadow-emerald-400">
-                <img className="shop-img rounded-lg cursor-pointer  hover:shadow-emerald-400 shadow-2xl" src={product.image} />
+                <img className="shop-img rounded-lg cursor-pointer  hover:shadow-emerald-400 shadow-2xl active:shadow-emerald-400" src={product.image} />
               </div>
               <p className="name-and-price">{product.name}</p>
               <p className="name-and-price">${product.price}</p>

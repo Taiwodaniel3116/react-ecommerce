@@ -42,7 +42,7 @@ const Cart = ({
           >
             <div className="shadow-2xl shadow-emerald-400 py-2">
               <img
-                className="cart-img pl-1 hover:shadow-emerald-400 shadow-2xl"
+                className="cart-img pl-1 hover:shadow-emerald-400 shadow-2xl active:shadow-emerald-400"
                 src={cartItem.image}
                 alt="cartItem"
               />
