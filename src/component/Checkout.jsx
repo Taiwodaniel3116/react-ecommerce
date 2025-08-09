@@ -16,7 +16,7 @@ const Checkout = ({ cartItems, totalQuantity, totalPrice }) => {
         </div>
         <Link to="/cart" className="flex items-center relative ml-10">
           <img
-            src="src/images/icons/cart-icon.png"
+            src="/images/icons/cart-icon.png"
             alt="cart icon"
             className="w-8 h-auto mr-3 mt-2"
           />
