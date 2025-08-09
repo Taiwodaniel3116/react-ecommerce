@@ -58,13 +58,13 @@ const Cart = ({
               
               <div className="mt-2">
                 <button
-                  className="text-white font-bold w-10 mr-3 rounded-full border-[1px] hover:bg-emerald-500 active:bg-emerald-500"
+                  className="text-white font-bold w-10 mr-3 rounded-full border-[1px] transition duration-300 hover:bg-emerald-500 active:bg-emerald-200"
                   onClick={() => decreaseQuantity(id)}
                 >
                   ➖
                 </button>
                 <button
-                  className="text-white font-bold w-10 rounded-full border-[1px] hover:bg-emerald-500 active:bg-emerald-500"
+                  className="text-white font-bold w-10 rounded-full border-[1px]  transition duration-300 hover:bg-emerald-500 active:bg-emerald-200"
                   onClick={() => increaseQuanity(id)}
                 >
                   ➕
@@ -72,7 +72,7 @@ const Cart = ({
               </div>
               <div>
                 <button
-                  className="text-white mt-2 font-bold hover:text-gray-300 active:text-gray-300"
+                  className="text-white mt-2 font-bold  transition duration-300 hover:text-gray-300 active:text-gray-300"
                   onClick={() => removeItem(id)}
                 >
                   Remove
@@ -87,7 +87,7 @@ const Cart = ({
         </div>
       </div>
 
-      <div className="mt-7 w-fit h-max m-auto bg-emerald-800 shadow-2xs shadow-emerald-300 text-white px-6 py-2 rounded-full hover:bg-emerald-900 active:bg-emerald-900">
+      <div className="mt-7 w-fit h-max m-auto bg-emerald-800 shadow-2xs shadow-emerald-300 text-white px-6 py-2 rounded-full  transition duration-300 hover:bg-emerald-900 active:bg-emerald-900">
         <Link to="/checkout">Proceed to Checkout</Link>
       </div>
     </div>

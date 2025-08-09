@@ -33,7 +33,7 @@ export const Shop = ({ addToCart, totalQuantity }) => {
           <div key={product.id}>
             <div className="pb-5 border-gray-100 border-2 shadow-2xl shadow-emerald-400">
               <div className="mt-2 shadow- shadow-emerald-400">
-                <img className="shop-img rounded-lg cursor-pointer  hover:shadow-emerald-400 shadow-2xl active:shadow-emerald-400" src={product.image} />
+                <img className="shop-img rounded-lg cursor-pointer  hover:shadow-emerald-400 shadow-2xl shadow-emerald-400" src={product.image} />
               </div>
               <p className="name-and-price">{product.name}</p>
               <p className="name-and-price">${product.price}</p>
@@ -41,7 +41,7 @@ export const Shop = ({ addToCart, totalQuantity }) => {
 
               <div className="flex items-center justify-center">
                 <button
-                  className="bg-emerald-500 px-9 py-1 rounded-full transition duration-200 shadow-2xs shadow-emerald-200 active:bg-emerald-500 hover:bg-emerald-400"
+                  className="bg-emerald-500 px-9 py-1 rounded-full transition duration-300 shadow-2xs shadow-emerald-200 active:bg-emerald-200 hover:bg-emerald-400"
                   onClick={() => addToCart(product)}
                 >
                   Add to cart
