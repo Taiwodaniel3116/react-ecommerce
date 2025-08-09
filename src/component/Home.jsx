@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const Home = ({ totalQuantity }) => {
   return (
     <>
-      <nav className="text-white flex justify-end border-b-[1px] border-b-emerald-950 pb-2">
+      <nav className="text-white flex justify-end border-b-[1px] border-b-emerald-950 pb-2 pt-2">
         <div>
           <Link to="/shop" className="pr-5 pl-3 text-green-300">
             Shop
@@ -25,7 +25,7 @@ export const Home = ({ totalQuantity }) => {
           </div>
         </Link>
       </nav>
-      <h1>Home</h1>
+      {/* <h1>Home</h1> */}
       <h2 className="text-white text-center font-bold mt-10">
         Dear Customer, welcome to our Wonderful store!
         <br /> Please head to our
@@ -35,7 +35,7 @@ export const Home = ({ totalQuantity }) => {
         >
           Shop
         </Link>
-        to check our different products. Thank you!
+        to check our different products out. Thank you!
       </h2>
     </>
   );
