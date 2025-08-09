@@ -2,7 +2,8 @@
 export const products = [
   {
    id: "1",
-   image: "src/images/adults-plain-cotton-tshirt-2-pack-teal.jpg",
+  //  image: "src/images/adults-plain-cotton-tshirt-2-pack-teal.jpg",
+   image: "public/images/adults-plain-cotton-tshirt-2-pack-teal.jpg",
    name: "Adult Cotton T-Shirt",
    price: 200,
    quantity: 1
