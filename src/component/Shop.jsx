@@ -27,7 +27,7 @@ export const Shop = ({ addToCart, totalQuantity }) => {
           </div>
         </Link>
       </nav>
-      <h1>Our Shop</h1>
+      {/* <h1>Our Shop</h1> */}
       <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8">
         {products.map((product) => (
           <div key={product.id}>

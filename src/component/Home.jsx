@@ -25,7 +25,6 @@ export const Home = ({ totalQuantity }) => {
           </div>
         </Link>
       </nav>
-      {/* <h1>Home</h1> */}
       <h2 className="text-white text-center font-bold mt-10">
         Dear Customer, welcome to our Wonderful store!
         <br /> Please head to our

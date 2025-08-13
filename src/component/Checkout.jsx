@@ -2,6 +2,27 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Checkout = ({ cartItems, totalQuantity, totalPrice }) => {
+
+  const phoneNumber = "2349027396272";
+
+  const handleWhatsappOrder = () => {
+    let message = "ORDER SUMMARY \n";
+    let total = 0;
+
+    cartItems.map((cartItem) => {
+      message += `${cartItem.name} (${cartItem.quantity}) - $${cartItem.price} \n`;
+      total += cartItem.price;
+    });
+
+    message += `\n TOTAL: $${total}`;
+
+    const encodedMessage = 
+    encodeURIComponent(message);
+     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+     window.open(whatsappURL, "_blank");
+  };
+
   return (
     <>
       <nav className="text-white flex justify-end border-b-[1px] border-b-emerald-950 pb-2 pt-2">
@@ -70,11 +91,13 @@ const Checkout = ({ cartItems, totalQuantity, totalPrice }) => {
           </div>
         </div>
         <div className="flex justify-center flex-col items-center gap-2 pt-3 mb-15 mt-5 font-mono">
-          <a href="https://wa.me/2349027396272">
-            <button className="bg-green-500 px-3 py-2 rounded-2xl hover:bg-green-400 active:bg-green-400">
+          {/* <a href={"https://wa.me/2349027396272"}> */}
+            <button className="bg-green-500 px-3 py-2 rounded-2xl hover:bg-green-400 active:bg-green-400"
+            onClick={handleWhatsappOrder}
+            >
               Complete Order via Whatsapp{" "}
             </button>
-          </a>
+            {/* </a> */}
           <a href="https://www.tiktok.com/@taiwo_odusanya">
             <button className="bg-black px-3 py-2 rounded-2xl hover:bg-gray-900 active:bg-gray-900">
               Complete Order via Tiktok{" "}
