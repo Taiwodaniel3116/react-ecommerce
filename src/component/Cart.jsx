@@ -13,10 +13,10 @@ const Cart = ({
     <div className="h-100">
       <nav className="text-white flex justify-end border-b-[1px] border-b-emerald-950 pb-2 pt-2">
         <div>
-          <Link to="/" className="pr-5 pl-3 text-green-300">
+          {/* <Link to="/" className="pr-5 pl-3 text-green-300">
             Home
-          </Link>
-          <Link to="/shop" className="pr-5 links-hover-color links-active-color">
+          </Link> */}
+          <Link to="/" className="pr-5 links-hover-color links-active-color">
             Shop
           </Link>
           <Link to="/checkout" className="links-hover-color links-active-color">Checkout</Link>

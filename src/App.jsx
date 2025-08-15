@@ -1,5 +1,5 @@
 import "./App.css";
-import { Home } from "./component/Home.jsx";
+// import { Home } from "./component/Home.jsx";
 import { Shop } from "./component/Shop.jsx";
 import Cart from "./component/Cart.jsx";
 import { useState, useEffect } from "react";
@@ -98,9 +98,9 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<Home totalQuantity={totalQuantity} />} />
+          {/* <Route path="/" element={<Home totalQuantity={totalQuantity} />} /> */}
           <Route
-            path="/shop"
+            path="/"
             element={
               <Shop
                 addToCart={addToCart}

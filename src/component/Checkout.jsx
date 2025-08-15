@@ -10,8 +10,8 @@ const Checkout = ({ cartItems, totalQuantity, totalPrice }) => {
     let total = 0;
 
     cartItems.map((cartItem) => {
-      message += `${cartItem.name} (${cartItem.quantity}) - $${cartItem.price} \n`;
-      total += cartItem.price;
+      message += `${cartItem.name} (${cartItem.quantity}) - $${cartItem.quantity * cartItem.price} \n`;
+      total = `${totalPrice}.00` ;
     });
 
     message += `\n TOTAL: $${total}`;
@@ -27,10 +27,10 @@ const Checkout = ({ cartItems, totalQuantity, totalPrice }) => {
     <>
       <nav className="text-white flex justify-end border-b-[1px] border-b-emerald-950 pb-2 pt-2">
         <div>
-          <Link to="/" className="pr-5 pl-3 text-green-300">
+          {/* <Link to="/" className="pr-5 pl-3 text-green-300">
             Home
-          </Link>
-          <Link to="/shop" className="pr-5 links-hover-color links-active-color">
+          </Link> */}
+          <Link to="/" className="pr-5 links-hover-color links-active-color">
             Shop
           </Link>
           <Link to="/cart" className="links-hover-color links-active-color">Cart</Link>
@@ -98,16 +98,16 @@ const Checkout = ({ cartItems, totalQuantity, totalPrice }) => {
               Complete Order via Whatsapp{" "}
             </button>
             {/* </a> */}
-          <a href="https://www.tiktok.com/@taiwo_odusanya">
+          {/* <a href="https://www.tiktok.com/@taiwo_odusanya">
             <button className="bg-black px-3 py-2 rounded-2xl hover:bg-gray-900 active:bg-gray-900">
               Complete Order via Tiktok{" "}
             </button>
-          </a>
-          <a href="www.instagram.com/taiwo_odusanya_73">
+          </a> */}
+          {/* <a href="www.instagram.com/taiwo_odusanya_73">
             <button className="bg-red-500 px-3 py-2 rounded-2xl hover:bg-red-400 active:bg-red-400">
               Complete Order via Instagram
             </button>
-          </a>
+          </a> */}
         </div>
       </div>
     </>

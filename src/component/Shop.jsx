@@ -7,9 +7,9 @@ export const Shop = ({ addToCart, totalQuantity }) => {
     <>
       <nav className="text-white flex justify-end border-b-[1px] border-b-emerald-950 pb-2 pt-2">
         <div>
-          <Link to="/" className="pr-5 pl-3 text-green-300">
+          {/* <Link to="/" className="pr-5 pl-3 text-green-300">
             Home
-          </Link>
+          </Link> */}
           <Link to="/cart" className="pr-5 links-hover-color links-active-color">
             Cart
           </Link>
