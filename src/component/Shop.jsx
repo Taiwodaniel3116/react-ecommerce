@@ -1,8 +1,34 @@
 import React from "react";
 import { products } from "../data/product";
 import { Link } from "react-router-dom";
+// import { useEffect, useRef, useState} from "react";
 
 export const Shop = ({ addToCart, totalQuantity }) => {
+
+// const ref = useRef(null);
+// const [isVisible, setIsVisible] = useState(false);
+
+// useEffect(() => {
+//   const observer = new IntersectionObserver(
+//     (entries) => {
+//       entries.forEach((entry) => {
+//         if (entry.isIntersecting) {
+//           setTimeout(() => setIsVisible(true), delay);
+//           observer.unobserve(entry.target);
+//         }
+//       });
+//     },
+//     {threshold: 0.2}
+//   );
+
+//   if (ref.current) observer.observe(ref.current);
+
+//   return () => {
+//     if (ref.current) observer.unobserve(ref.current)
+//   };
+// }, [delay]);
+
+
   return (
     <>
       <nav className="text-white flex justify-end border-b-[1px] border-b-emerald-950 pb-2 pt-2">
@@ -27,8 +53,10 @@ export const Shop = ({ addToCart, totalQuantity }) => {
           </div>
         </Link>
       </nav>
+
       {/* <h1>Our Shop</h1> */}
-      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8">
+      <div className="grid grid-cols-2
+       md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8">
         {products.map((product) => (
           <div key={product.id}>
             <div className="pb-5 border-gray-100 border-2 shadow-2xl shadow-emerald-400">

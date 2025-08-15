@@ -35,3 +35,4 @@ body {
 @utility links-active-color {
   @apply active:text-green-300;
 }
+
