@@ -11,7 +11,7 @@ export const products = [
   {
    id: "2",
    image: "/images/backpack.jpg",
-   name: "  Black Backpack",
+   name: "Black Backpack",
    price: 65,
    quantity: 1
   },

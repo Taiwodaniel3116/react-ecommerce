@@ -36,6 +36,9 @@ export const Shop = ({ addToCart, totalQuantity }) => {
           {/* <Link to="/" className="pr-5 pl-3 text-green-300">
             Home
           </Link> */}
+          {/* <input type="text"
+           placeholder="search" 
+           className="bg-white text-black px-3 py-2 rounded-2xl outline-none border-green-400 border-2" /> */}
           <Link to="/cart" className="pr-5 links-hover-color links-active-color">
             Cart
           </Link>
@@ -60,7 +63,7 @@ export const Shop = ({ addToCart, totalQuantity }) => {
         {products.map((product) => (
           <div key={product.id}>
             <div className="pb-5 border-gray-100 border-2 shadow-2xl shadow-emerald-400">
-              <div className="mt-2 shadow- shadow-emerald-400">
+              <div className="mt-2 shadow-emerald-400">
                 <img className="shop-img rounded-lg cursor-pointer  hover:shadow-emerald-400 shadow-2xl shadow-emerald-400" src={product.image} />
               </div>
               <p className="name-and-price">{product.name}</p>
